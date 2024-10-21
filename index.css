@@ -36,3 +36,18 @@ a.hover {
 ul {
     list-style-type: square;
 }
+
+div.testbutton {
+    margin: auto;
+    width: 3%;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    text-align: center;
+    background-color: #526095;
+    border: solid 2px black;
+    border-radius: 5px;
+}
+div.testbutton:hover {
+    background-color: #222c52;
+}
