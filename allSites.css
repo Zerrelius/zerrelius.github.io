@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: cursive, sans-serif;
+}
+
+ul.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a {
+    float: left;
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
