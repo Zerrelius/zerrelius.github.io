@@ -15,14 +15,15 @@ ul.navigation {
     justify-content: flex-end;
     align-items: center;
     background-color: black;
+    border-radius: 5px;
 }
 
 div.topnav li {
     float: left;
+    margin: 2px;
     padding: 8px;
     text-align: -10px;
     background-color: #526095;
-    border: solid 2px black;
     border-radius: 5px;
 }
 div.topnav li:hover {
