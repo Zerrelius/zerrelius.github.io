@@ -7,33 +7,47 @@
         <link rel="stylesheet" href="allSites.css">
     </head>
     <body>
-        <ul class="Navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="news.html">News</a></li>
-        </ul>
+        <div class="topnav">
+            <ul class="Navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </div>
 
+        <br>
         Hello World <br>
         Test 1 <br>
         <br>
+
         Link with Icon:
-        <a href="about.html">About Site</a> <i class="glyphicon glyphicon-user"></i> <br>
+        <a class="testlink" href="about.html">About Site</a> <i class="glyphicon glyphicon-user"></i> <br>
         <br>
+
         <h1>Headline</h1><br>
         Test 4 <br>
         <br>
-        <div>
+
+        <div class="sidebox">
             Lorem ipsum dolor sit amet,
             consectetur adipiscing elit,
             sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua.
         </div>
+
         <br>
         <br>
+
         <h2>Headline 2 with red neon glow</h2><br>
         <h3>Headline with a lot special effects</h3>
 
-        <canvas id="myCanvas" width="300" height="150"></canvas> <br>
+        <h3>Canvas:</h3>
+        <canvas id="myCanvas" width="300" height="150" style="border:1px solid grey"></canvas> <br>
+        <script>
+            const c = document.getElementById("myCanvas");
+            const ctx = c.getContext("2d");
+            ctx.fillRect(20, 20, 150, 100);
+        </script>
 
         <ul>
             <h2>This is a list</h2>
