@@ -1,24 +1,98 @@
-h1 {
-    color: rgb(171, 65, 65);
-    margin-left: 20px;
-    font-family: 'Times New Roman', Times, serif;
+section::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-div.sidebox {
+div.sidebox1 {
+    float: left;
     display: block;
-    width: 330px;
-    height: 75px;
-    padding: 0;
+    width: 10%;
+    height: 11%;
+    padding: 10px;
+    border: 2px solid rgb(21, 149, 40);
+    margin: 0px;
+    text-align: center;
+    position: fixed;
+    left: 1%;
+  }
+
+div.sidebox2 {
+    float: left;
+    display: block;
+    width: 10%;
+    height: 11%;
+    padding: 10px;
     border: 2px solid rgb(145, 48, 48);
     margin: 0px;
     text-align: center;
     position: fixed;
-    right: 20px;
+    right: 1%;
   }
 
+div.textbutton1 {
+    margin: auto;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #526095;
+    border: solid 2px black;
+    border-radius: 5px;
+}
+
+div.testerbutton {
+    margin: auto;
+    width: 5%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 8px;
+    background-color: #a0281b;
+    border: solid 2px black;
+    border-radius: 5px;
+}
+div.testerbutton:hover {
+    background-color: #3b0909;
+}
+
+div.linkandicons {
+    margin: 1%;
+    width: 12%;
+    display: flex;
+    position: fixed;
+    border: 2px solid rgb(21, 149, 40);
+    right: 0%;
+}
+
+h1 {
+    width: 5%;
+    margin: left;
+    text-align: center;
+    color: rgb(171, 65, 65);
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #222c52;
+}
+
+div.testbutton {
+    width: 3%;
+    margin: left;
+    padding: 8px;
+    text-align: center;
+    background-color: #526095;
+    border: solid 2px rgb(172, 131, 34);
+    border-radius: 5px;
+}
+div.testbutton:hover {
+    background-color: #222c52;
+    border: solid 2px rgb(172, 41, 34);
+}
+
 h2 {
+    padding: 8px;
     text-shadow: 0 0 3px #ff0000;
     font-family: Georgia, serif;
+    border: 2px solid rgb(21, 149, 40);
 }
 
 h3 {
@@ -35,19 +109,4 @@ a.hover {
 
 ul {
     list-style-type: square;
-}
-
-div.testbutton {
-    margin: auto;
-    width: 3%;
-    display: flex;
-    justify-content: center;
-    padding: 8px;
-    text-align: center;
-    background-color: #526095;
-    border: solid 2px black;
-    border-radius: 5px;
-}
-div.testbutton:hover {
-    background-color: #222c52;
 }

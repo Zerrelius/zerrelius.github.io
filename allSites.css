@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #1f1f1f;
     color: aliceblue;
@@ -25,10 +29,12 @@ div.topnav li {
     text-align: -10px;
     background-color: #526095;
     border-radius: 5px;
+    border: solid 2px rgb(172, 131, 34);
 }
 div.topnav li:hover {
     background-color: #303a60;
     box-shadow: 0px 5px 15px 2px #C2C2C2;
+    border: solid 2px rgb(172, 41, 34);
 }
 div.topnav li a {
     color: #C2C2C2;
