@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="allSites.css">
 
         <script src="https://kit.fontawesome.com/d18cbdf0cc.js" crossorigin="anonymous"></script>
+        <script src="./index.js"></script>
 
         <meta charset="UTF-8">
         <meta name="author" content="Zerrelius">
@@ -20,6 +21,52 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="news.html">News</a></li>
+            </ul>
+        </div>
+
+        <div class="ExampleNavigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <span class="text">Profile</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-comment"></i>
+                        </span>
+                        <span class="text">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-camera"></i>
+                        </span>
+                        <span class="text">Photos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-gear"></i>
+                        </span>
+                        <span class="text">Settings</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
             </ul>
         </div>
 
@@ -82,11 +129,12 @@
             ctx.fillRect(20, 20, 150, 100);
         </script>
 
-        <ul>
+        <ul class="itemlist">
             <h2>This is a list</h2>
             <li>Item 1</li>
             <li>Item 2</li>
             <li>I like cookies!</li>
         </ul>
+
     </body>
 </html>
