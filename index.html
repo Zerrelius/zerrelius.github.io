@@ -8,62 +8,68 @@
         <link rel="stylesheet" href="allSites.css">
 
         <script src="https://kit.fontawesome.com/d18cbdf0cc.js" crossorigin="anonymous"></script>
-        <script src="./index.js"></script>
-
+        <script src="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous"></script>
+        
         <meta charset="UTF-8">
         <meta name="author" content="Zerrelius">
-        <meta http-equiv="refresh" content="30">
+        <!--<meta http-equiv="refresh" content="30">-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+
     <body>
+
+        <div class="cursor"></div>
+
         <div class="topnav">
             <ul class="Navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="news.html">News</a></li>
+                <div class="sites">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="news.html">News</a></li>
+                </div>
             </ul>
         </div>
 
         <div class="ExampleNavigation">
             <ul>
-                <li>
+                <li class="list">
                     <a href="#">
                         <span class="icon">
                             <i class="fa-solid fa-house"></i>
                         </span>
-                        <span class="text">Home</span>
+                        <span class="naviText">Home</span>
                     </a>
                 </li>
-                <li>
+                <li class="list">
                     <a href="#">
                         <span class="icon">
                             <i class="fa-solid fa-user"></i>
                         </span>
-                        <span class="text">Profile</span>
+                        <span class="naviText">Profile</span>
                     </a>
                 </li>
-                <li class="active">
+                <li class="list active">
                     <a href="#">
                         <span class="icon">
                             <i class="fa-solid fa-comment"></i>
                         </span>
-                        <span class="text">Message</span>
+                        <span class="naviText">Message</span>
                     </a>
                 </li>
-                <li>
+                <li class="list">
                     <a href="#">
                         <span class="icon">
                             <i class="fa-solid fa-camera"></i>
                         </span>
-                        <span class="text">Photos</span>
+                        <span class="naviText">Photos</span>
                     </a>
                 </li>
-                <li>
+                <li class="list">
                     <a href="#">
                         <span class="icon">
                             <i class="fa-solid fa-gear"></i>
                         </span>
-                        <span class="text">Settings</span>
+                        <span class="naviText">Settings</span>
                     </a>
                 </li>
                 <div class="indicator"></div>
@@ -79,6 +85,19 @@
                 ut labore et dolore magna aliqua.
             </div>
         
+            <div class="loader">
+                <span class="loaderText" style="--i:1;">L</span>
+                <span class="loaderText" style="--i:2;">O</span>
+                <span class="loaderText" style="--i:3;">A</span>
+                <span class="loaderText" style="--i:4;">D</span>
+                <span class="loaderText" style="--i:5;">I</span>
+                <span class="loaderText" style="--i:6;">N</span>
+                <span class="loaderText" style="--i:7;">G</span>
+                <span class="loaderText" style="--i:8;">.</span>
+                <span class="loaderText" style="--i:9;">.</span>
+                <span class="loaderText" style="--i:10;">.</span>
+            </div>
+
             <div class="sidebox2">
                 Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit,
@@ -136,5 +155,8 @@
             <li>I like cookies!</li>
         </ul>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="./index.js"></script>
     </body>
 </html>

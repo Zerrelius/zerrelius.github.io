@@ -1,155 +1,55 @@
 @import url("https://use.fontawesome.com/releases/v6.4.2/css/all.css");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
-div.ExampleNavigation ul li a .icon, .text {
-    color: #222327;
-}
-
-div.ExampleNavigation {
-    position: relative;
-    width: 400px;
-    height: 70px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
-}
-
-div.ExampleNavigation ul {
-    display: flex;
-    width: 350px;
-    padding: 0;
-}
-
-div.ExampleNavigation ul li {
-    position: relative;
-    list-style: none;
-    width: 70px;
-    height: 60px;
-    z-index: 2;
-}
-
-div.ExampleNavigation ul li a {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
-}
-
-div.ExampleNavigation li a {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
-}
-
-div.ExampleNavigation ul li a .icon{
-    position: relative;
-    display: block;
-    line-height: 75px;
-    font-size: 1.5em;
-    text-align: center;
-    transition: 0.5s;
-}
-
-div.ExampleNavigation ul li.active a .icon {
-    transform: translateY(-18px);
-}
-
-div.ExampleNavigation ul li a .text {
-    position: absolute;
-    font-weight: 400;
-    font-size: 0.75em;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
-    opacity: 0;
-}
-
-div.ExampleNavigation ul li.active a .text {
-    position: absolute;
-    background: tomato;
-    padding: 2px 7px;
-    border-radius: 12px;
-    font-weight: 400;
-    font-size: 0.75em;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
-    opacity: 1;
-    transform: translateY(35px);
-}
-
-li.active a .text {
-    opacity: 1;
-    transform: translateY(10px);
-}
-
-div.indicator {
-    position: absolute;
-    top: -50%;
-    width: 70px;
-    height: 70px;
-    background: tomato;
-    box-sizing: border-box;
-    border-radius: 50%;
-    border: 6px solid #222327;
-    transition: 0.5s;
-}
-
-div.indicator::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-}
-
-div.indicator::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-}
-
-div.indicator::before {
-    left: -22px;
-    border-top-right-radius: 20px;
-    box-shadow: 1px -10px 0 0 #222327;
-}
-
-div.indicator::after {
-    right: -22px;
-    border-top-left-radius: 20px;
-    box-shadow: -1px -10px 0 0 #222327;
-}
-
-div.ExampleNavigation li.active ~ div.indicator {
-    --x: 0;
-    transform: translateX(var(--x));
-}
-
-div.ExampleNavigation li:nth-child(2).active ~ .indicator { --x: 70px; }
-div.ExampleNavigation li:nth-child(3).active ~ .indicator { --x: 140px; }
-div.ExampleNavigation li:nth-child(4).active ~ .indicator { --x: 210px; }
-div.ExampleNavigation li:nth-child(5).active ~ .indicator { --x: 280px; }
-
 section::after {
     content: "";
     display: table;
     clear: both;
+}
+
+div.loader {
+    position: fixed;
+    cursor: default;
+    width: auto;
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 8px;
+    text-align: 50px;
+    left: 20%;
+    -webkit-box-reflect: below 20px linear-gradient(transparent, #0005);
+}
+
+.loader span {
+    position: relative;
+    display: inline-flex;
+    font-size: 3em;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff9;
+    text-transform: uppercase;
+    font-weight: 800;
+    animation: animate 2s ease-in-out infinite;
+    animation-delay: calc(0.15s * var(--i));
+}
+@keyframes animate {
+    0%
+    {
+        transform: translateY(0px);
+        color: transparent;
+        text-shadow: none;
+    }
+    20%
+    {
+        transform: translateY(-60px);
+        color: #fff;
+        text-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff,;
+    }
+    40%,100%
+    {
+        transform: translateY(0px);
+        color: transparent;
+        text-shadow: none;
+    }
 }
 
 div.sidebox1 {
