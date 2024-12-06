@@ -1,0 +1,68 @@
+@import url("https://use.fontawesome.com/releases/v6.4.2/css/all.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
+
+div.greetings {
+    color: #e0e0e0;
+    margin-left: 2%;
+    margin-top: 8%;
+}
+div.greetings>h3.hello {
+    display: block;
+    margin-bottom: 1px;
+    font-size: 3em;
+}
+div.greetings>h2.name {
+    display: block;
+    margin-left: 1em;
+    margin-bottom: 10px;
+    font-size: 4em;
+}
+div.greetings>span.introduceText {
+    display: block;
+    margin-top: 1em;
+    font-size: 1em;
+    color: #7f7f7f;
+}
+div.greetings>a.HireMe {
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+    margin-left: 2em;
+    width: 3.5%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    background-color: #464646;
+    text-decoration: none;
+    color: #e0e0e0;
+    border-radius: 10px;
+    border: solid 2px #121212;
+}
+div.greetings>a.HireMe:hover {
+    box-shadow: 0px 0px 15px 3px #7f7f7f;
+    color: #e0e0e0;
+    border: solid 2px #0c0c0c;
+    text-decoration: underline;
+}
+
+div.socialLinks {
+    display: block;
+    text-align: center;
+    color: #e0e0e0;
+    left: 590px;
+    top: 185px;
+    width: 55px;
+    height: 55px;
+    line-height: 35px;
+    font-size: 16px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    z-index: 11;
+    position: absolute;
+    background: #0b144e;
+}
+div.socialLinks>a>i.fa-brands {
+    color: #fff;
+}
