@@ -131,3 +131,58 @@ div.socialLinks>a.linkedIn:hover {
 div.socialLinks>a>i.fa-brands {
     margin-top: 40px;
 }
+
+div.service-wrapper {
+    display: block;
+    padding-bottom: 0;
+    margin-top: 8%;
+    background: rgb(38, 38, 38);
+}
+div.service-wrapper>div.container {
+    display: flex;
+    justify-content: left;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background: rgb(38, 38, 38);
+}
+h2.service-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 800px;
+    font-size: 3em;
+    margin-top: 2%;
+    margin-left: 38%;
+    border-radius: 25px;
+    background: #050c37;
+}
+div.service-wrapper>div.container>ul.service-display {
+    display: flex;
+    float: left;
+    margin-top: 2em;
+    margin-left: 10%;
+    list-style-type: none;
+}
+div.service-wrapper>div.container>ul.service-display>li {
+    text-align: center;
+    margin-left: 10%;
+    width: 500px;
+    height: 600px;
+    background: #050c37;
+    border-radius: 25px;
+}
+ul.service-display>li>i {
+    margin-top: 30%;
+}
+ul.service-display>li>span {
+    font-size: 32px;
+    text-decoration: underline;
+}
+ul.service-display>li>ul {
+    list-style-type: none;
+    margin-top: 2em;
+}
+ul.service-display>li>ul>li {
+    margin-top: 1.2em;
+    font-size: 18px;
+}

@@ -39,16 +39,16 @@ div.navigation>ul.Navigation>li>a {
     padding-left: 10px;
     padding-right: 10px;
     text-align: -10px;
-    background-color: #526095;
+    background-color: #006435;
     text-decoration: none;
     overflow: hidden;
     color: #C2C2C2;
     border-radius: 10px;
-    border: solid 2px rgb(24, 82, 173);
+    border: solid 2px #01fe87;
 }
 div.navigation>ul.Navigation>li>a:hover {
-    background-color: #303a60;
-    box-shadow: 0px 5px 15px 2px #396cb2;
+    background-color: #01fe87;
+    box-shadow: 0px 5px 15px 2px #006435;
     color: rgb(22, 82, 166);
     border: solid 2px rgb(16, 47, 88);
     text-decoration: underline;
