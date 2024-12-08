@@ -36,7 +36,7 @@
         </div>
 
         <div class="container">
-            <div class="row1">
+            <div class="row">
                 <div class="filter">
                     <button onclick="Filter()" class="btn btn-outline-secondary all active">All</button>
                     <button onclick="Filter()" class="btn btn-outline-secondary webdevelopment">Web-Development</button>
@@ -44,9 +44,104 @@
                     <button onclick="Filter()" class="btn btn-outline-secondary cSharp">C#</button>
                 </div>
             </div>
-            <div class="row2">
-                <div></div>
+            <div class="row">
+                <div class="projectContainer">
+                    <div class="container">
+                        <div class="img-box">
+                            <img class="bg-image" src="" alt="">
+                            <div class="img-zoom-container">
+                                <img class="image" id="image1" src="Pictures/Movielist-Photo1.png" width="300" height="240" alt="Movielist Code">
+                                <div id="result1" class="img-zoom-result"></div>
+                                <div class=".img-zoom-lens"></div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h4>
+                                <a href="https://github.com/Zerrelius/python_movielist">Movie List</a>
+                            </h4>
+                            <ul class="tags">
+                                <li>Python</li>
+                                <li> / </li>
+                                <li>Git</li>
+                                <li> / </li>
+                                <li>For Fun</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="img-box">
+                            <img class="bg-image" src="" alt="">
+                            <div class="img-zoom-container">
+                                <img class="image" id="image2" src="Pictures/Portfolio-Page.png" width="300" height="240" alt="Movielist Code">
+                                <div id="result2" class="img-zoom-result"></div>
+                                <div class=".img-zoom-lens"></div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h4>
+                                <a href="https://github.com/Zerrelius/zerrelius.github.io">Portfolio Page</a>
+                            </h4>
+                            <ul class="tags">
+                                <li>HTML</li>
+                                <li>/</li>
+                                <li>CSS</li>
+                                <li>/</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="img-box">
+                            <img class="bg-image" src="" alt="">
+                            <div class="img-zoom-container">
+                                <img class="image" id="image2" src="" width="300" height="240" alt="Movielist Code">
+                                <div id="result2" class="img-zoom-result"></div>
+                                <div class=".img-zoom-lens"></div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h4>
+                                <a href="">Third Project</a>
+                            </h4>
+                            <ul class="tags">
+                                <li>1. Tag</li>
+                                <li> / </li>
+                                <li>2. Tag</li>
+                                <li> / </li>
+                                <li>3. Tag</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="img-box">
+                            <img class="bg-image" src="" alt="">
+                            <div class="img-zoom-container">
+                                <img class="image" id="image2" src="" width="300" height="240" alt="Movielist Code">
+                                <div id="result2" class="img-zoom-result"></div>
+                                <div class=".img-zoom-lens"></div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h4>
+                                <a href="">Fourth Project</a>
+                            </h4>
+                            <ul class="tags">
+                                <li>1. Tag</li>
+                                <li> / </li>
+                                <li>2. Tag</li>
+                                <li> / </li>
+                                <li>3. Tag</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <script>
+            imageZoom("image1", "result1");
+            imageZoom("image2", "result2");
+            imageZoom("image3", "result3");
+            imageZoom("image4", "result4");
+        </script>
     </body>
 </html>

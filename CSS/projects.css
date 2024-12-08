@@ -1,13 +1,14 @@
 @import url("https://use.fontawesome.com/releases/v6.4.2/css/all.css");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
 
-div.row1 {
+div.row {
     display: flex;
     justify-content: center;
     margin-top: 2%;
     white-space: nowrap;
+    flex-wrap: wrap;
 }
-div.row1>div.filter>button.btn {
+div.row>div.filter>button.btn {
     cursor: pointer;
     justify-content: center;
     align-items: center;
@@ -19,9 +20,81 @@ div.row1>div.filter>button.btn {
     border: 1px solid aliceblue;
     border-radius: 25px;
 }
-div.row1>div.filter>button.btn-outline-secondary:hover {
+div.row>div.filter>button.btn-outline-secondary:hover {
     background-color: #6c757d;
 }
-div.row1>div.filter>button.active {
+div.row>div.filter>button.active {
     background-color: #6c757d;
+}
+
+div.row>div.projectContainer {
+    display: flex;
+    justify-content: center;
+}
+div.row>div.projectContainer>div.container {
+    display: block;
+    justify-content: center;
+    width: 600px;
+    margin-right: 5%;
+    padding: 2%;
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom left, #050c37, rgba(0, 73, 0, 0.415), #050c37);
+}
+div.container>div.img-box {
+    overflow: hidden;
+}
+div.img-zoom-container {
+    position: relative;
+}
+img.image {
+    position: relative;
+    vertical-align: middle;
+    height: 400px;
+    width: 100%;
+    max-width: 100%;
+    /*transition: transform .2s;*/
+}
+/*
+div.container>div.img-box>img.image:hover {
+    overflow: auto;
+    transform: scale(3);
+}
+*/
+div.img-zoom-lens {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    /*set the size of the lens:*/
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+  }
+div.img-zoom-result {
+  width: 400px;
+  height: 400px;
+  margin-top: 4%;
+  border: 1px solid #6c757d;
+}
+div.content>h4 {
+    display: flex;
+    margin-top: 8%;
+    font-size: 42px;
+    font-weight: bold;
+}
+div.content>h4>a {
+    text-decoration: none;
+    color: aliceblue;
+}
+div.content>ul.tags {
+    display: block;
+    margin-top: 4%;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+div.content>ul.tags>li {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-right: 4%;
 }
