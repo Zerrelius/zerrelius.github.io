@@ -10,14 +10,12 @@
 body {
     background-color: #1f1f1f;
     color: aliceblue;
-    font-family: cursive, sans-serif;
+    font-family: cursiv, sans-serif;
     margin: 10px;
 }
 
 .navigation {
-    margin: 1em;
-    padding: 0.4em;
-    padding-right: 5%;
+    margin-top: 1em;
     background-color: rgb(38, 38, 38);
     border-radius: 15px;
 }
@@ -25,9 +23,14 @@ body {
 ul.Navigation {
     list-style-type: none;
     overflow: hidden;
-    padding: 0.5%;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
 }
 
+div.navigation>ul.Navigation>li {
+    margin-top: 0.4%;
+    float: right;
+}
 div.navigation>ul.Navigation>li>a {
     float: right;
     display: flex;
@@ -40,60 +43,74 @@ div.navigation>ul.Navigation>li>a {
     padding-right: 10px;
     text-align: -10px;
     background-color: #006435;
+    background-image: linear-gradient(to bottom right, #050c37, rgba(15, 106, 15, 0.552));
     text-decoration: none;
     overflow: hidden;
-    color: #C2C2C2;
-    border-radius: 10px;
+    color: aliceblue;
+    border-radius: 10%;
     border: solid 2px #01fe87;
+    border-image: linear-gradient(to bottom right, #0055ff, #01fe87);
+    border-width: 4px;
 }
 div.navigation>ul.Navigation>li>a:hover {
     background-color: #01fe87;
-    box-shadow: 0px 5px 15px 2px #006435;
-    color: rgb(22, 82, 166);
-    border: solid 2px rgb(16, 47, 88);
+    box-shadow: 2px 5px 15px 2px #00ff88;
+    color: #01fe87;
+    border-radius: 10%;
+    border: solid 2px #01fe87;
+    border-image: linear-gradient(to bottom right, #0055ff, #01fe87);
+    border-width: 4px;
     text-decoration: underline;
 }
 
+div.navigation>ul.Navigation>li.HireMe {
+    margin-top: 0.6%;
+    float: right;
+}
 div.navigation>ul.Navigation>li>a.HireMe {
     float: right;
     display: flex;
     justify-content: right;
     margin: -5px;
-    margin-left: 10px;
-    padding-top: 12px;
+    margin-left: 1px;
+    padding-top: 10px;
     padding-bottom: 12px;
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
     background-color: #121212;
+    background-image: linear-gradient(to top left, #121212, #474747);
     text-decoration: none;
-    color: #C2C2C2;
-    border-radius: 10px;
+    color: aliceblue;
+    border-radius: 10%;
     border: solid 2px #121212;
+    border-image: linear-gradient(to bottom right, #121212, #474747);
+    border-width: 4px;
 }
 div.navigation>ul.Navigation>li>a.HireMe:hover {
     box-shadow: 0px 5px 15px 2px #7f7f7f;
-    color: rgb(22, 82, 166);
+    background-image: linear-gradient(to top left, #474747, #121212);
+    border-radius: 10%;
     border: solid 2px #626262;
+    border-image: linear-gradient(to bottom right, #474747, #121212);
+    border-width: 4px;
     text-decoration: underline;
 }
 
 .WhoAmI {
+    display: block;
     float: left;
-    margin: -5em;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 .WhoAmI>h2.WhoIAmText {
     display: inline-block;
     color: aliceblue;
-    font-size: 4em;
+    font-size: 2%;
     font-weight: 400;
-    padding: 0 100px;
 }
 .WhoAmI>h2.WhoIAmText>span {
     position: relative;
@@ -143,3 +160,9 @@ div.navigation>ul.Navigation>li>a.HireMe:hover {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }

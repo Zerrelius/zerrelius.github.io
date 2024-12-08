@@ -1,0 +1,27 @@
+@import url("https://use.fontawesome.com/releases/v6.4.2/css/all.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
+
+div.row1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    white-space: nowrap;
+}
+div.row1>div.filter>button.btn {
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    margin-right: 5%;
+    padding: 2%;
+    color: aliceblue;
+    background-color: #0e32c1;
+    border: 1px solid aliceblue;
+    border-radius: 25px;
+}
+div.row1>div.filter>button.btn-outline-secondary:hover {
+    background-color: #6c757d;
+}
+div.row1>div.filter>button.active {
+    background-color: #6c757d;
+}
