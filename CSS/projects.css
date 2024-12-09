@@ -12,9 +12,9 @@ div.row>div.filter>button.btn {
     cursor: pointer;
     justify-content: center;
     align-items: center;
-    font-size: 45px;
     margin-right: 5%;
     padding: 2%;
+    font-size: 45px;
     color: aliceblue;
     background-color: #0e32c1;
     border: 1px solid aliceblue;
@@ -30,11 +30,14 @@ div.row>div.filter>button.active {
 div.row>div.projectContainer {
     display: flex;
     justify-content: center;
+    white-space: normal;
+    flex-wrap: wrap;
 }
 div.row>div.projectContainer>div.container {
     display: block;
     justify-content: center;
     width: 600px;
+    margin-top: 2em;
     margin-right: 5%;
     padding: 2%;
     border-radius: 25px;

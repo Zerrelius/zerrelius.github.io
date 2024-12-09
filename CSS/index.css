@@ -179,20 +179,21 @@ div.service-wrapper>div.container>ul.service-display>li {
     padding: 2%;
     width: 70%;
     height: 98%;
+    white-space: normal;
     background: #050c37;
     border-radius: 25px;
     background-image: linear-gradient(to bottom right, #050c37, rgba(0, 73, 0, 0.415), #050c37);
 }
 ul.service-display>li>i {
     margin-top: 20%;
-    margin-bottom: 10%;
+    margin-bottom: 25%;
 }
 ul.service-display>li>span {
     text-decoration: underline;
 }
 ul.service-display>li>ul {
     list-style-type: none;
-    margin-top: 2em;
+    margin-top: 0.5em;
 }
 ul.service-display>li>ul>li {
     margin-top: 0.7em;
