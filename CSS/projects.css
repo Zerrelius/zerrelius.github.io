@@ -8,13 +8,19 @@ div.row {
     white-space: nowrap;
     flex-wrap: wrap;
 }
+div.row>div.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+}
 div.row>div.filter>button.btn {
     cursor: pointer;
     justify-content: center;
     align-items: center;
     margin-right: 5%;
     padding: 2%;
-    font-size: 45px;
+    font-size: 1rem;
     color: aliceblue;
     background-color: #0e32c1;
     border: 1px solid aliceblue;
@@ -36,8 +42,8 @@ div.row>div.projectContainer {
 div.row>div.projectContainer>div.container {
     display: block;
     justify-content: center;
-    width: 600px;
-    margin-top: 2em;
+    width: 18rem;
+    margin-top: 1rem;
     margin-right: 5%;
     padding: 2%;
     border-radius: 25px;
@@ -100,4 +106,50 @@ div.content>ul.tags>li {
     justify-content: center;
     font-size: 24px;
     margin-right: 4%;
+}
+
+@media screen and (max-width: 600px) {
+    div.row>div.filter {
+        width: 30rem;
+    }
+    div.row>div.filter>button.btn {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+}
+@media screen and (min-width: 600px) {
+    div.row>div.filter {
+        width: 20rem;
+    }
+    div.row>div.filter>button.btn {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    div.row>div.projectContainer>div.container {
+        width: 22rem;
+        margin-top: 1rem;
+        margin-right: 5%;
+        padding: 2%;
+        }
+}
+@media screen and (min-width: 2000px) {
+    div.row>div.filter {
+        width: 20rem;
+    }
+    div.row>div.filter>button.btn {
+        font-size: 2rem;
+        margin-top: 0rem;
+    }
+    div.row>div.projectContainer>div.container {
+        width: 38rem;
+        margin-top: 1rem;
+        margin-right: 2%;
+        padding: 2%;
+        }
+    div.img-zoom-result {
+    width: 600px;
+    height: 500px;
+        margin-top: 4%;
+        border: 1px solid #6c757d;
+      }
 }

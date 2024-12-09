@@ -23,20 +23,20 @@ body {
 ul.Navigation {
     list-style-type: none;
     overflow: hidden;
-    margin-right: 10px;
-    padding-right: 0.5%;
-    padding-left: 0.5%;
+    margin-right: 0.1rem;
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
+    flex-wrap: wrap;
 }
 
 div.navigation>ul.Navigation>li {
     margin-top: 0.4%;
-    margin-right: 15px;
-    float: right;
+    margin-right: 0.4rem;
 }
 div.navigation>ul.Navigation>li>a {
-    float: right;
-    display: flex;
-    justify-content: right;
+    float: left;
+    display: block;
+    justify-content: left;
     margin: 0.2em;
     padding-top: 4%;
     padding-bottom: 4%;
@@ -65,18 +65,17 @@ div.navigation>ul.Navigation>li>a:hover {
 }
 
 div.navigation>ul.Navigation>li.HireMe {
-    margin-top: 0.6%;
-    float: right;
+    float: left;
 }
 div.navigation>ul.Navigation>li>a.HireMe {
-    float: right;
-    display: flex;
-    justify-content: right;
-    margin-top: 0.2px;
+    float: left;
+    display: block;
+    justify-content: left;
+    margin-right: -0.2rem;
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 0.3rem;
     text-align: center;
     white-space: nowrap;
     background-color: #121212;
@@ -106,11 +105,13 @@ div.navigation>ul.Navigation>li>a.HireMe:hover {
     display: flex;
     justify-content: left;
     align-items: center;
+    margin-top: 0.2rem;
+    margin-left: 0.5rem;
 }
 .WhoAmI>h2.WhoIAmText {
     display: inline-block;
     color: aliceblue;
-    font-size: 2%;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 .WhoAmI>h2.WhoIAmText>span {
