@@ -24,8 +24,7 @@ ul.Navigation {
     list-style-type: none;
     overflow: hidden;
     margin-right: 0.1rem;
-    padding-right: 0.1rem;
-    padding-left: 0.1rem;
+    padding: 0.2rem;
     flex-wrap: wrap;
 }
 
@@ -34,14 +33,11 @@ div.navigation>ul.Navigation>li {
     margin-right: 0.4rem;
 }
 div.navigation>ul.Navigation>li>a {
-    float: left;
-    display: block;
-    justify-content: left;
+    float: right;
+    display: flex;
+    justify-content: right;
     margin: 0.2em;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    padding-left: 4%;
-    padding-right: 4%;
+    padding: 0.7rem;
     text-align: -10px;
     background-color: #006435;
     background-image: linear-gradient(to bottom right, #050c37, rgba(15, 106, 15, 0.552));
@@ -65,17 +61,15 @@ div.navigation>ul.Navigation>li>a:hover {
 }
 
 div.navigation>ul.Navigation>li.HireMe {
-    float: left;
+    float: right;
 }
 div.navigation>ul.Navigation>li>a.HireMe {
-    float: left;
-    display: block;
-    justify-content: left;
+    float: right;
+    display: flex;
+    justify-content: right;
+    margin-top: 0.2em;
     margin-right: -0.2rem;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 0.3rem;
+    padding: 0.7rem;
     text-align: center;
     white-space: nowrap;
     background-color: #121212;
@@ -107,6 +101,7 @@ div.navigation>ul.Navigation>li>a.HireMe:hover {
     align-items: center;
     margin-top: 0.2rem;
     margin-left: 0.5rem;
+    margin-right: 3rem;
 }
 .WhoAmI>h2.WhoIAmText {
     display: inline-block;
@@ -168,3 +163,57 @@ div.navigation>ul.Navigation>li>a.HireMe:hover {
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
   }
+
+/* -------------------
+    Responsive Media
+    ------------------ */
+    @media screen and (min-width: 375px) {
+        .WhoAmI {
+            margin-top: 0.2rem;
+            margin-left: 0.5rem;
+            margin-right: 6rem;
+        }
+    }
+    
+    @media screen and (min-width: 425px) {
+        .WhoAmI {
+            margin-top: 0.2rem;
+            margin-left: 0.5rem;
+            margin-right: 9rem;
+        }
+    }
+    
+    @media screen and (min-width: 768px) {
+        .WhoAmI {
+            margin-top: 0.2rem;
+            margin-left: 0.5rem;
+            margin-right: 5rem;
+        }
+        .WhoAmI>h2.WhoIAmText {
+            font-size: 2.4rem;
+        }
+    }
+    
+    @media screen and (min-width: 1024px) {
+        .WhoAmI>h2.WhoIAmText {
+            font-size: 2.4rem;
+        }
+    }
+    
+    @media screen and (min-width: 1440px) {
+        div.navigation>ul.Navigation>li {
+            margin-top: 0.2%;
+        }
+        div.navigation>ul.Navigation>li>a {
+            font-size: 20px;
+        }
+    }
+    
+    @media screen and (min-width: 2560px) {
+        div.navigation>ul.Navigation>li {
+            margin-top: 0.1%;
+        }
+        div.navigation>ul.Navigation>li>a {
+            font-size: 24px;
+        }
+    }

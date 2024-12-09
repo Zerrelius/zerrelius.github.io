@@ -153,3 +153,34 @@ div.content>ul.tags>li {
         border: 1px solid #6c757d;
       }
 }
+
+/* -------------------
+    Responsive Media
+    ------------------ */
+    @media screen and (max-width: 320px) {
+    
+    }
+    
+    @media screen and (max-width: 375px) {
+    
+    }
+    
+    @media screen and (max-width: 425px) {
+        
+    }
+    
+    @media screen and (max-width: 768px) {
+        
+    }
+    
+    @media screen and (max-width: 1024px) {
+        
+    }
+    
+    @media screen and (max-width: 1440px) {
+        
+    }
+    
+    @media screen and (max-width: 2560px) {
+        
+    }

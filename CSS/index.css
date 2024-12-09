@@ -9,31 +9,28 @@ div.greetings {
 div.greetings>h3.hello {
     display: block;
     margin-bottom: 1px;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 div.greetings>h2.name {
     display: block;
     margin-left: 1em;
     margin-bottom: 10px;
-    font-size: 2.5rem;
+    font-size: 1.2rem;
 }
 div.greetings>span.introduceText {
     display: block;
     margin-top: 1em;
-    font-size: 1em;
-    width: 26rem;
+    font-size: 0.8em;
+    width: 10rem;
     color: #7f7f7f;
 }
 div.greetings>a.HireMe {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
-    margin-left: 2em;
-    width: 100px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 10px;
-    padding-right: 10px;
+    vertical-align: middle;
+    margin-left: 1rem;
+    width: 5rem;
+    padding: 0.2rem;
     text-align: center;
     background-color: #121212;
     background-image: linear-gradient(to top left, #121212, #474747);
@@ -57,8 +54,8 @@ div.greetings>a.HireMe:hover {
 }
 
 div.image-half-round-shape {
-    top: 7.5rem;
-    left: 26rem;
+    top: 8rem;
+    left: 10rem;
     position: absolute;
     width: 5rem;
     height: 10rem;
@@ -69,8 +66,8 @@ div.image-half-round-shape {
     z-index: -1;
 }
 div.image-half-round-shape-left {
-    top: 8.5rem;
-    left: 24rem;
+    top: 9rem;
+    left: 8rem;
     position: absolute;
     width: 5rem;
     height: 8rem;
@@ -81,8 +78,8 @@ div.image-half-round-shape-left {
     z-index: -1;
 }
 div.image-half-round-shape-right {
-    top: 6.5rem;
-    left: 27rem;
+    top: 7rem;
+    left: 11rem;
     position: absolute;
     width: 6rem;
     height: 12rem;
@@ -96,8 +93,8 @@ div.socialLinks>a.github {
     display: block;
     text-align: center;
     color: #fff;
-    left: 28rem;
-    top: 7.5rem;
+    left: 12rem;
+    top: 8rem;
     width: 3rem;
     height: 3rem;
     font-size: 16px;
@@ -118,8 +115,8 @@ div.socialLinks>a.linkedIn {
     display: block;
     text-align: center;
     color: #fff;
-    left: 28rem;
-    top: 14.5rem;
+    left: 12rem;
+    top: 15rem;
     width: 3rem;
     height: 3rem;
     font-size: 16px;
@@ -146,13 +143,6 @@ div.service-wrapper {
     border-radius: 25px;
     background: rgb(38, 38, 38);
 }
-div.service-wrapper>div.container {
-    display: flex;
-    justify-content: center;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    border-radius: 25px;
-}
 div.service-wrapper>div.Header {
     padding-top: 0.5rem;
 }
@@ -161,27 +151,35 @@ h2.service-title {
     justify-content: center;
     text-align: center;
     width: 95%;
-    font-size: 250%;
+    font-size: 110%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px;
     background: #050c37;
     background-image: linear-gradient(to bottom right, #050c37, rgba(15, 72, 15, 0.415), #050c37);
 }
+div.service-wrapper>div.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+}
 div.service-wrapper>div.container>ul.service-display {
     display: flex;
+    justify-content: center;
     margin-top: 1%;
-    margin-left: 1rem;
+    margin-left: 0.2rem;
     list-style-type: none;
 }
 div.service-wrapper>div.container>ul.service-display>li {
     text-align: center;
     white-space: nowrap;
-    margin-right: 2.2rem;
+    margin-right: 0.5rem;
     margin-bottom: 1rem;
     padding: 0.5rem;
-    width: 6.5rem;
-    height: 22rem;
+    width: 4em;
+    height: 17rem;
     white-space: normal;
     background: #050c37;
     border-radius: 25px;
@@ -190,12 +188,12 @@ div.service-wrapper>div.container>ul.service-display>li {
 ul.service-display>li>i {
     margin-top: 1.5rem;
     margin-bottom: 2rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     white-space: pre;
 }
 ul.service-display>li>p {
     text-decoration: underline;
-    font-size: 1.3rem;
+    font-size: 0.8rem;
 }
 ul.service-display>li>ul {
     list-style-type: none;
@@ -203,25 +201,423 @@ ul.service-display>li>ul {
 }
 ul.service-display>li>ul>li {
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 0.6rem;
 }
 
 /* -------------------
     Responsive Media
     ------------------ */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 320px) {
     
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 375px) {
+    div.service-wrapper {
+        margin-top: 2.5rem;
+    }
+    h2.service-title {
+        width: 95%;
+        font-size: 1.5rem;
+    }
     div.service-wrapper>div.container>ul.service-display {
-        display: flex;
-        margin-top: 1%;
-        margin-left: 1rem;
-        list-style-type: none;
+        margin-left: 0.8rem;
+    }
+    div.service-wrapper>div.container>ul.service-display>li {
+        margin-right: 0.8rem;
+        width: 4.5rem;
+        height: 19rem;
+    }
+    ul.service-display>li>i {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+    ul.service-display>li>p {
+        font-size: 0.8rem;
+    }
+    ul.service-display>li>ul {
+        margin-top: 0.5em;
+    }
+    ul.service-display>li>ul>li {
+        margin-top: 1rem;
+        font-size: 0.8rem;
     }
 }
 
-@media screen and (min-width: 2000px) {
-    
+@media screen and (min-width: 425px) {
+    div.image-half-round-shape {
+        top: 9rem;
+        left: 13rem;
+        width: 5rem;
+        height: 10rem;
+    }
+    div.image-half-round-shape-left {
+        top: 10rem;
+        left: 11rem;
+        width: 5rem;
+        height: 8rem;
+    }
+    div.image-half-round-shape-right {
+        top: 8rem;
+        left: 15rem;
+        width: 6rem;
+        height: 12rem;
+    }
+    div.socialLinks>a.github {
+        left: 15rem;
+        top: 9rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 16px;
+    }
+    div.socialLinks>a.linkedIn {
+        left: 15rem;
+        top: 16rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 16px;
+    }
+    div.service-wrapper {
+        margin-top: 2.5rem;
+    }
+    h2.service-title {
+        width: 95%;
+        font-size: 1.5rem;
+    }
+    div.service-wrapper>div.container>ul.service-display {
+        margin-left: 1.5rem;
+    }
+    div.service-wrapper>div.container>ul.service-display>li {
+        margin-right: 1.5rem;
+        width: 5rem;
+        height: 20rem;
+    }
+    ul.service-display>li>i {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+    ul.service-display>li>p {
+        font-size: 1rem;
+    }
+    ul.service-display>li>ul {
+        margin-top: 0.5em;
+    }
+    ul.service-display>li>ul>li {
+        margin-top: 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    div.greetings>h3.hello {
+        margin-bottom: 1px;
+        font-size: 2rem;
+    }
+    div.greetings>h2.name {
+        margin-left: 1em;
+        margin-bottom: 10px;
+        font-size: 3rem;
+    }
+    div.greetings>span.introduceText {
+        margin-top: 1em;
+        font-size: 0.8em;
+        width: 30rem;
+    }
+    div.greetings>a.HireMe {
+        margin-left: 4rem;
+        width: 5rem;
+        padding: 0.2rem;
+    }
+    div.image-half-round-shape {
+        top: 9rem;
+        left: 29rem;
+        width: 5rem;
+        height: 10rem;
+    }
+    div.image-half-round-shape-left {
+        top: 10rem;
+        left: 27rem;
+        width: 5rem;
+        height: 8rem;
+    }
+    div.image-half-round-shape-right {
+        top: 8rem;
+        left: 30rem;
+        width: 6rem;
+        height: 12rem;
+    }
+    div.socialLinks>a.github {
+        left: 31rem;
+        top: 9rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 16px;
+    }
+    div.socialLinks>a.linkedIn {
+        left: 31rem;
+        top: 16rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 16px;
+    }
+    div.service-wrapper {
+        margin-top: 3rem;
+    }
+    h2.service-title {
+        width: 95%;
+        font-size: 2.5rem;
+    }
+    div.service-wrapper>div.container>ul.service-display {
+        margin-left: 2rem;
+    }
+    div.service-wrapper>div.container>ul.service-display>li {
+        margin-right: 1.5rem;
+        width: 10rem;
+        height: 22rem;
+    }
+    ul.service-display>li>i {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+    ul.service-display>li>p {
+        font-size: 1.5rem;
+    }
+    ul.service-display>li>ul {
+        margin-top: 0.5em;
+    }
+    ul.service-display>li>ul>li {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    div.greetings>h3.hello {
+        margin-bottom: 0.5rem;
+        font-size: 3rem;
+    }
+    div.greetings>h2.name {
+        margin-left: 1em;
+        margin-bottom: 10px;
+        font-size: 4rem;
+    }
+    div.greetings>span.introduceText {
+        margin-top: 1em;
+        font-size: 1.5em;
+        width: 45rem;
+    }
+    div.greetings>a.HireMe {
+        margin-left: 4rem;
+        width: 7rem;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+    div.image-half-round-shape {
+        top: 12rem;
+        left: 41rem;
+        width: 7rem;
+        height: 14rem;
+    }
+    div.image-half-round-shape-left {
+        top: 14rem;
+        left: 40rem;
+        width: 5rem;
+        height: 10rem;
+    }
+    div.image-half-round-shape-right {
+        top: 11rem;
+        left: 43rem;
+        width: 8rem;
+        height: 16rem;
+    }
+    div.socialLinks>a.github {
+        left: 44.5rem;
+        top: 13rem;
+        width: 4rem;
+        height: 4rem;
+        font-size: 16px;
+    }
+    div.socialLinks>a.linkedIn {
+        left: 44.5rem;
+        top: 21rem;
+        width: 4rem;
+        height: 4rem;
+        font-size: 16px;
+    }
+    div.service-wrapper {
+        margin-top: 3rem;
+    }
+    h2.service-title {
+        width: 70%;
+        font-size: 2.5rem;
+    }
+    div.service-wrapper>div.container>ul.service-display>li {
+        margin-right: 1.5rem;
+        width: 14rem;
+        height: 29rem;
+    }
+    ul.service-display>li>i {
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+        font-size: 3rem;
+    }
+    ul.service-display>li>p {
+        font-size: 2.5rem;
+    }
+    ul.service-display>li>ul {
+        margin-top: 0.5em;
+    }
+    ul.service-display>li>ul>li {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    div.image-half-round-shape {
+        top: 11rem;
+        left: 52rem;
+        width: 9rem;
+        height: 16rem;
+    }
+    div.image-half-round-shape-left {
+        top: 13rem;
+        left: 50rem;
+        width: 7rem;
+        height: 12rem;
+    }
+    div.image-half-round-shape-right {
+        top: 9rem;
+        left: 54rem;
+        width: 10rem;
+        height: 20rem;
+    }
+    div.socialLinks>a.github {
+        left: 56rem;
+        top: 11.5rem;
+        width: 4.5rem;
+        height: 4.5rem;
+        font-size: 20px;
+    }
+    div.socialLinks>a.linkedIn {
+        left: 56rem;
+        top: 22rem;
+        width: 4.5rem;
+        height: 4.5rem;
+        font-size: 20px;
+    }
+    div.service-wrapper {
+        margin-top: 3rem;
+    }
+    h2.service-title {
+        width: 60%;
+        font-size: 3rem;
+    }
+    div.service-wrapper>div.container>ul.service-display>li {
+        margin-right: 3rem;
+        width: 18rem;
+        height: 35rem;
+    }
+    ul.service-display>li>i {
+        margin-top: 3rem;
+        margin-bottom: 2.5rem;
+        font-size: 4rem;
+    }
+    ul.service-display>li>p {
+        font-size: 3rem;
+    }
+    ul.service-display>li>ul {
+        margin-top: 0.5em;
+    }
+    ul.service-display>li>ul>li {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    div.greetings {
+        margin-top: 3rem;
+    }
+    div.greetings>h3.hello {
+        margin-bottom: 0.5rem;
+        font-size: 4rem;
+    }
+    div.greetings>h2.name {
+        margin-left: 1em;
+        margin-bottom: 10px;
+        font-size: 5rem;
+    }
+    div.greetings>span.introduceText {
+        margin-top: 1em;
+        font-size: 1.5em;
+        width: 80rem;
+    }
+    div.greetings>a.HireMe {
+        margin-left: 4rem;
+        width: 7rem;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+    div.image-half-round-shape {
+        top: 11rem;
+        left: 82rem;
+        width: 9rem;
+        height: 18rem;
+    }
+    div.image-half-round-shape-left {
+        top: 13rem;
+        left: 80rem;
+        width: 7rem;
+        height: 14rem;
+    }
+    div.image-half-round-shape-right {
+        top: 9rem;
+        left: 84rem;
+        width: 11rem;
+        height: 22rem;
+    }
+    div.socialLinks>a.github {
+        left: 86rem;
+        top: 8.5em;
+        width: 5rem;
+        height: 5rem;
+        font-size: 22px;
+    }
+    div.socialLinks>a.linkedIn {
+        left: 86rem;
+        top: 23.5rem;
+        width: 5rem;
+        height: 5rem;
+        font-size: 22px;
+    }
+    div.service-wrapper {
+        margin-top: 6rem;
+    }
+    h2.service-title {
+        width: 50%;
+        font-size: 4rem;
+    }
+    div.service-wrapper>div.container>ul.service-display>li {
+        margin-right: 10rem;
+        width: 24rem;
+        height: 42rem;
+    }
+    ul.service-display>li>i {
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+        font-size: 6rem;
+    }
+    ul.service-display>li>p {
+        font-size: 3rem;
+    }
+    ul.service-display>li>ul {
+        margin-top: 2.5em;
+    }
+    ul.service-display>li>ul>li {
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
 }
