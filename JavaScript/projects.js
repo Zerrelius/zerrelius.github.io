@@ -52,8 +52,9 @@ function imageZoom(imgID, resultID) {
   /*insert lens:*/
   img.parentElement.insertBefore(lens, img);
   /*calculate the ratio between result DIV and lens:*/
-  cx = result.offsetWidth / lens.offsetWidth;
-  cy = result.offsetHeight / lens.offsetHeight;
+  //cx = result.offsetWidth / lens.offsetWidth;
+  cx = 200 / lens.offsetWidth;
+  cy = 200 / lens.offsetHeight;
   /*set background properties for the result DIV:*/
   result.style.backgroundImage = "url('" + img.src + "')";
   result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
