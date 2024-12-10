@@ -1,0 +1,29 @@
+@import url("https://use.fontawesome.com/releases/v6.4.2/css/all.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
+
+a.email {
+    display: flex;
+    justify-content: center;
+    width: 11rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    color: aliceblue;
+    background-color: #006435;
+    background-image: linear-gradient(to bottom right, #050c37, rgba(15, 106, 15, 0.552));
+    text-decoration: none;
+    border-radius: 10%;
+    border: solid 2px #01fe87;
+    border-image: linear-gradient(to bottom right, #0055ff, #01fe87);
+    border-width: 4px;
+}
+
+a.email:hover {
+    background-color: #01fe87;
+    box-shadow: 2px 5px 15px 2px #00ff88;
+    color: #01fe87;
+    border-radius: 10%;
+    border: solid 2px #01fe87;
+    border-image: linear-gradient(to bottom right, #0055ff, #01fe87);
+    border-width: 4px;
+    text-decoration: underline;
+}
