@@ -1,6 +1,19 @@
 @import url("https://use.fontawesome.com/releases/v6.4.2/css/all.css");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
 
+p.Explaining {
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    color: aliceblue;
+    font-size: 1.5rem;
+    background-color: #006435;
+    background-image: linear-gradient(to bottom right, #050c37, rgba(13, 60, 13, 0.552), #050c37);
+    border-radius: 24px;
+}
+
 a.email {
     display: flex;
     justify-content: center;

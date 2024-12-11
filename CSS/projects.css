@@ -22,15 +22,18 @@ div.row>div.filter>button.btn {
     padding: 1rem;
     font-size: 2rem;
     color: aliceblue;
-    background-color: #0e32c1;
-    border: 1px solid aliceblue;
-    border-radius: 25px;
+    background-color: #006435;
+    background-image: linear-gradient(to bottom right, #050c37, rgba(15, 106, 15, 0.552));
+    border: solid 2px #01fe87;
+    border-image: linear-gradient(to bottom right, #0055ff, #01fe87);
+    border-radius: 10%;
+    border-width: 4px;
 }
 div.row>div.filter>button.btn-outline-secondary:hover {
-    background-color: #6c757d;
+    background-color: #110f96;
 }
 div.row>div.filter>button.active {
-    background-color: #6c757d;
+    background-color: #110f96;
 }
 
 div.row>div.projectContainer {
