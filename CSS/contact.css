@@ -40,3 +40,65 @@ a.email:hover {
     border-width: 4px;
     text-decoration: underline;
 }
+
+label {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 25px;
+    background-color: #006435;
+    background-image: linear-gradient(to bottom right, #050c37, rgba(13, 60, 13, 0.552), #050c37);
+}
+label::after {
+    white-space: pre;
+}
+
+input[type=text] {
+    display: flex;
+    border: 1px solid #555;
+    margin: 0.5rem auto 2rem;
+    padding: 0.5rem;
+    border-radius: 12px;
+    width: 10%;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+textarea {
+    display: flex;
+    border: 1px solid #555;
+    width: 50%;
+    height: 10rem;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    font-size: 16px;
+    border-radius: 12px;
+    background-color: #f8f8f8;
+    resize: vertical;
+}
+input[type=textarea]:focus {
+    border: 3px solid #555;
+}
+
+input[type=submit] {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    width: 9rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    color: aliceblue;
+    background-color: #006435;
+    background-image: linear-gradient(to bottom right, #050c37, rgba(15, 106, 15, 0.552));
+}
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #01fe87;
+    box-shadow: 2px 5px 15px 2px #00ff88;
+    color: #01fe87;
+    text-decoration: underline;
+}
