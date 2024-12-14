@@ -18,9 +18,9 @@ div.row>div.filter>button.btn {
     cursor: pointer;
     justify-content: center;
     align-items: center;
-    margin-right: 1.5rem;
-    padding: 1rem;
-    font-size: 2rem;
+    margin-right: 0.5rem;
+    padding: 0.2rem;
+    font-size: 0.8rem;
     color: aliceblue;
     background-color: #006435;
     background-image: linear-gradient(to bottom right, #050c37, rgba(15, 106, 15, 0.552));
@@ -38,14 +38,14 @@ div.row>div.filter>button.active {
 
 div.row>div.projectContainer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
     justify-content: center;
     flex-wrap: wrap;
 }
 div.row>div.projectContainer>div.container {
     justify-content: center;
-    padding: 1rem;
+    padding: 0.2rem;
     border-radius: 25px;
     background-image: linear-gradient(to bottom left, #050c37, rgba(0, 73, 0, 0.415), #050c37);
 }
@@ -58,9 +58,9 @@ div.img-zoom-container {
 img.image {
     position: relative;
     vertical-align: middle;
-    height: 400px;
-    width: 100%;
-    max-width: 100%;
+    height: 8rem;
+    width: 8rem;
+    max-width: 8rem;
     /*transition: transform .2s;*/
 }
 /*
@@ -73,20 +73,20 @@ div.img-zoom-lens {
     position: absolute;
     border: 1px solid #d4d4d4;
     /*set the size of the lens:*/
-    width: 40px;
-    height: 40px;
+    width: 2rem;
+    height: 2rem;
     z-index: 1;
   }
 div.img-zoom-result {
-  width: 400px;
-  height: 400px;
+  width: 8rem;
+  height: 8rem;
   margin-top: 4%;
   border: 1px solid #6c757d;
 }
 div.content>h4 {
     display: flex;
     margin-top: 8%;
-    font-size: 42px;
+    font-size: 0.8rem;
     font-weight: bold;
 }
 div.content>h4>a {
@@ -105,8 +105,7 @@ div.content>ul.tags>li {
     display: inline-block;
     text-align: center;
     justify-content: center;
-    font-size: 24px;
-    margin-right: 4%;
+    font-size: 0.5rem;
     list-style: none;
 }
 
@@ -116,27 +115,166 @@ div.content>ul.tags>li {
     @media screen and (max-width: 320px) {
     
     }
-    
     @media screen and (max-width: 375px) {
-    
-    }
-    
-    @media screen and (max-width: 425px) {
         
     }
-    
-    @media screen and (max-width: 768px) {
-        
+    @media screen and (min-width: 425px) {
+        div.row>div.projectContainer {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+        }
+        img.image {
+            height: 12rem;
+            width: 12rem;
+            max-width: 12rem;
+        }
+        div.img-zoom-result {
+            width: 12rem;
+            height: 12rem;
+            margin-top: 4%;
+          }
+        div.content>h4 {
+            margin-top: 8%;
+            font-size: 1rem;
+        }
+        div.content>ul.tags>li {
+            font-size: 0.6rem;
+            margin-bottom: 0.5rem;
+            margin-left: 0.2rem;
+        }
     }
     
-    @media screen and (max-width: 1024px) {
-        
+    @media screen and (min-width: 768px) {
+        div.row>div.filter>button.btn {
+            margin-right: 0.5rem;
+            padding: 0.2rem;
+            font-size: 2rem;
+            border-radius: 10%;
+            border-width: 4px;
+        }
+        div.row>div.projectContainer {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+        img.image {
+            height: 14rem;
+            width: 18rem;
+            max-width: 18rem;
+        }
+        div.img-zoom-result {
+            width: 18rem;
+            height: 14rem;
+            margin-top: 4%;
+          }
+        div.content>h4 {
+            margin-top: 8%;
+            font-size: 1.5rem;
+        }
+        div.content>ul.tags>li {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            margin-left: 0.2rem;
+        }
     }
     
-    @media screen and (max-width: 1440px) {
-        
+    @media screen and (min-width: 1024px) {
+        div.row>div.filter>button.btn {
+            margin-right: 0.5rem;
+            padding: 0.2rem;
+            font-size: 2.5rem;
+            border-radius: 10%;
+            border-width: 4px;
+        }
+        div.row>div.projectContainer {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+        img.image {
+            height: 18rem;
+            width: 18rem;
+            max-width: 18rem;
+        }
+        div.img-zoom-result {
+            width: 18rem;
+            height: 18rem;
+            margin-top: 4%;
+          }
+        div.content>h4 {
+            margin-top: 8%;
+            font-size: 1.5rem;
+        }
+        div.content>ul.tags>li {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            margin-left: 0.2rem;
+        }
     }
     
-    @media screen and (max-width: 2560px) {
-        
+    @media screen and (min-width: 1440px) {
+        div.row>div.filter>button.btn {
+            margin-right: 0.5rem;
+            padding: 0.2rem;
+            font-size: 2.5rem;
+            border-radius: 10%;
+            border-width: 4px;
+        }
+        div.row>div.projectContainer {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+        img.image {
+            height: 20rem;
+            width: 20rem;
+            max-width: 20rem;
+        }
+        div.img-zoom-result {
+            width: 20rem;
+            height: 20rem;
+            margin-top: 4%;
+          }
+        div.content>h4 {
+            margin-top: 8%;
+            font-size: 2rem;
+        }
+        div.content>ul.tags>li {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            margin-left: 0.2rem;
+        }
+    }
+    
+    @media screen and (min-width: 2560px) {
+        div.row {
+            margin-top: 1.5rem;
+        }
+        div.row>div.filter>button.btn {
+            margin-right: 0.5rem;
+            padding: 0.2rem;
+            font-size: 2.5rem;
+            border-radius: 10%;
+            border-width: 4px;
+        }
+        div.row>div.projectContainer {
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1.5rem;
+        }
+        img.image {
+            height: 20rem;
+            width: 20rem;
+            max-width: 20rem;
+        }
+        div.img-zoom-result {
+            width: 20rem;
+            height: 20rem;
+            margin-top: 4%;
+          }
+        div.content>h4 {
+            margin-top: 8%;
+            font-size: 2rem;
+        }
+        div.content>ul.tags>li {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            margin-left: 0.2rem;
+        }
     }
