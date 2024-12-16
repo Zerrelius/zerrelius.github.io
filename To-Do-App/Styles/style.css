@@ -78,6 +78,7 @@ li>input {
 }
 
 .todo-list button {
+    margin-left: 5px;
     padding: 5px 10px;
 }
 .todo-list button:hover {
