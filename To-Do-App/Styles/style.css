@@ -20,6 +20,7 @@ body {
 
 h1 {
     text-align: center;
+    margin-top: 1rem;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
@@ -37,6 +38,9 @@ form input.todo-input {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
+}
+form input.todo-input:hover {
+    background-color: #dadada;
 }
 
 form button.todo-button {
@@ -66,7 +70,7 @@ li>input {
     font-size: 1rem;
 }
 
-.todo-list input[type='checkbox']:checked + span {
+.todo-list input[type='checkbox']:checked + span.task-name {
     text-decoration: line-through;
     background-color: #d9534f;
     color: #ffffff;
@@ -76,6 +80,7 @@ li>input {
 .todo-list button:hover {
     background-color: #c9302c;
     padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .todo-info {

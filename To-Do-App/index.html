@@ -5,10 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>To-Do-App</title>
 
+        <link rel="stylesheet" href=".././CSS/main.css">
         <link rel="stylesheet" href="./Styles/style.css">
     </head>
 
     <body>
+        <div class="navigation">
+            <ul class="Navigation">
+                <div class="WhoAmI">
+                    <h2 class="WhoIAmText"> I'm a
+                        <span style="--i:0" data-text="Coder.">Coder.</span>
+                        <span style="--i:1" data-text="Designer.">Designer.</span>
+                        <span style="--i:2" data-text="Creator.">Creator.</span>
+                        <span style="--i:3" data-text="Science guy.">Science guy.</span>
+                    </h2>
+                </div>
+                <li class="HireMe"><a class="HireMe" href="../contact.html">Hire Me</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </div>
 
         <h1>Meine To-Do-Liste</h1>
 
@@ -21,7 +37,7 @@
             <ul class="todo-list">
                 <!--Elemente für die einzelnen Aufgaben: Checkbox für erledigt; span für Aufgabentext; button zum löschen-->
                 <li><input type="checkbox" aria-label="Aufgabe erledigen">
-                    <span>Aufgabentext</span>
+                    <span class="task-name">Aufgabentext</span>
                     <button aria-label="Aufgabe Löschen">Löschen</button>
                 </li>
             </ul>

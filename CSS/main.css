@@ -9,13 +9,13 @@
 
 body {
     background-color: #1f1f1f;
-    color: aliceblue;
-    font-family: cursiv, sans-serif;
     margin: 10px;
 }
 
 .navigation {
     margin-top: 1em;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(38, 38, 38);
     border-radius: 15px;
 }
