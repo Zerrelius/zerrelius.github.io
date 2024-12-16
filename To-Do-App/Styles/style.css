@@ -77,9 +77,11 @@ li>input {
     border-radius: 5px;
 }
 
+.todo-list button {
+    padding: 5px 10px;
+}
 .todo-list button:hover {
     background-color: #c9302c;
-    padding: 5px 10px;
     border-radius: 5px;
 }
 
