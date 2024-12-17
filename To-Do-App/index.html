@@ -7,10 +7,11 @@
 
         <link rel="stylesheet" href=".././CSS/main.css">
         <link rel="stylesheet" href="./Styles/style.css">
+        <script src="script.js" defer></script>
     </head>
 
     <body>
-        <!-- Navigation Bar beginning -->
+        <!-- Navigation Bar beginning --
         <div class="navigation">
             <ul class="Navigation">
                 <div class="WhoAmI">
@@ -26,7 +27,7 @@
                 <li><a href="../index.html">Home</a></li>
             </ul>
         </div>
-        <!-- Navigation Bar ending -->
+        <-- Navigation Bar ending -->
 
         <!-- App Header -->
         <h1>Meine To-Do-Liste</h1>
@@ -34,17 +35,17 @@
         <!-- App -->
         <div class="todo-app">
             <!-- App Form -->
-            <form class="todo-form" action="">
-                <input type="text" id="todo-input" class="todo-input" placeholder="Neue Aufgabed hinzufügen...">
-                <button type="submit" class="todo-button">Aufgabe hinzufügen</button>
+            <form class="todo-form" id="todo-form" action="">
+                <input type="text" id="todo-input" class="todo-input" name="task-text" placeholder="Neue Aufgabed hinzufügen..." required>
+                <button type="submit" id="todo-button" class="todo-button">Aufgabe hinzufügen</button>
             </form>
 
             <!-- App To-Do-Task List -->
-            <ul class="todo-list">
+            <ul class="todo-list" id="todo-list">
                 <!--Elemente für die einzelnen Aufgaben: Checkbox für erledigt; span für Aufgabentext; button zum löschen-->
-                <li><input type="checkbox" aria-label="Aufgabe erledigen">
-                    <span class="task-name">Aufgabentext</span>
-                    <button aria-label="Aufgabe Löschen">Löschen</button>
+                <li><input class="check-box" id="check-box" type="checkbox" aria-label="Aufgabe erledigen">
+                    <span class="task-name" id="task-name">Aufgabentext</span>
+                    <button class="delete-button" id="delete-button" aria-label="Aufgabe Löschen">Löschen</button>
                 </li>
             </ul>
 
