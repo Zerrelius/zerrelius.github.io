@@ -34,9 +34,18 @@ formular.addEventListener("submit", function submitForm(e) {
         return false;
     }
 
-    // Task added to ul
-    addNewTask(newTask);
     console.log("Formular submitted!");
+    // Object of a single Task
+    var date = Date.now();
+    const task = {
+        status: false,
+        text: newTask,
+        date: date
+    };
+
+    tasks.push(task);
+    // Task added to ul
+    renderToDos();
     // Clear Variable newTask
     newTask = '';
     // Clear Form Input Fields
@@ -45,20 +54,12 @@ formular.addEventListener("submit", function submitForm(e) {
 });
 
 // Function to add new Task to ul List
-function addNewTask(newTaskFromForm) {
-    const taskText = newTaskFromForm;
-    // Object of a single Task
-    var date = Date.now();
-    const task = {
-        status: false,
-        text: taskText,
-        date: date
-    };
-
-    tasks.push(task);
-
+function renderToDos() {
+    list.innerHTML = '';
+    
     // Add new Lines to List
     tasks.forEach((task) => {
+
         const checkBox = document.createElement('input');
         checkBox.classList.add('check-box');
         checkBox.setAttribute('aria-label', 'Aufgabe erledigen');
@@ -68,6 +69,7 @@ function addNewTask(newTaskFromForm) {
         const span = document.createElement('span');
         span.classList.add('task-name');
         span.innerText = task.date + ' ' + task.text;
+        console.log(span);
 
         const button = document.createElement('button');
         button.classList.add('delete-button');
@@ -75,6 +77,7 @@ function addNewTask(newTaskFromForm) {
         
 
         const li = document.createElement('li');
+        li.classList.add('list-item');
         li.appendChild(checkBox);
         li.appendChild(span);
         li.appendChild(button);
@@ -86,6 +89,5 @@ function addNewTask(newTaskFromForm) {
             const actualLi = button.parentElement;
             list.removeChild(actualLi);
         });
-        tasks.pop(task.date);
     });
 };
