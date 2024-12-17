@@ -53,6 +53,7 @@ form button.todo-button {
 
 form button.todo-button:hover {
     background-color: #005bb5;
+    cursor: pointer;
 }
 
 ul.todo-list {
@@ -81,10 +82,12 @@ li>input {
 .todo-list button {
     margin-left: 5px;
     padding: 5px 10px;
-}
-.todo-list button:hover {
     background-color: #c9302c;
     border-radius: 5px;
+}
+.todo-list button:hover {
+    cursor: pointer;
+    background-color: #921d19;
 }
 
 .todo-info {
