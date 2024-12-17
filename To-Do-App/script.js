@@ -9,13 +9,11 @@ const submitButton = document.getElementById("todo-button");
 const list = document.getElementById("todo-list");
 
 // Array for Tasks
-const tasks = []; // [Objects]
+let tasks = []; // [Objects]
 // Name of Task -> given from Form
 const taskText = '';
 // Object for Task Status
 const taskStatus = false;
-// ID for Task
-//const date = '';
 
 /*
     Main Code Block
@@ -40,7 +38,7 @@ formular.addEventListener("submit", function submitForm(e) {
     const task = {
         status: false,
         text: newTask,
-        date: date
+        id: date
     };
 
     tasks.push(task);
@@ -68,12 +66,17 @@ function renderToDos() {
 
         const span = document.createElement('span');
         span.classList.add('task-name');
-        span.innerText = task.date + ' ' + task.text;
+        span.innerText = task.id + ' ' + task.text;
         console.log(span);
 
         const button = document.createElement('button');
         button.classList.add('delete-button');
         button.innerText = "Löschen";
+        button.addEventListener("click", () => {
+            tasks = tasks.filter((t) => t.id !== task.id);
+            renderToDos();
+        });
+        
         
 
         const li = document.createElement('li');
@@ -83,11 +86,7 @@ function renderToDos() {
         li.appendChild(button);
 
         list.appendChild(li);
-
-        // Function of Delete Button
-        button.addEventListener("click", () => {
-            const actualLi = button.parentElement;
-            list.removeChild(actualLi);
-        });
     });
 };
+
+renderToDos();
