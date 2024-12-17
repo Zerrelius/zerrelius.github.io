@@ -57,6 +57,7 @@ function addNewTask(newTaskFromForm) {
 
     tasks.push(task);
 
+    // Add new Lines to List
     tasks.forEach((task) => {
         const checkBox = document.createElement('input');
         checkBox.classList.add('check-box');
@@ -85,5 +86,6 @@ function addNewTask(newTaskFromForm) {
             const actualLi = button.parentElement;
             list.removeChild(actualLi);
         });
+        tasks.pop(task.date);
     });
 };
