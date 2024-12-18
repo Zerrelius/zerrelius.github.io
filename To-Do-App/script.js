@@ -44,6 +44,8 @@ formular.addEventListener("submit", function submitForm(e) {
     tasks.push(task);
     // Task added to ul
     renderToDos();
+    // Local Storage Save
+    saveTodos();
     // Clear Variable newTask
     newTask = '';
     // Clear Form Input Fields
@@ -76,9 +78,8 @@ function renderToDos() {
         button.addEventListener("click", () => {
             tasks = tasks.filter((t) => t.id !== task.id);
             renderToDos();
+            saveTodos();
         });
-        
-        
 
         const li = document.createElement('li');
         li.classList.add('list-item');
@@ -94,6 +95,35 @@ function toggleTaskCompletion(taskId) {
     const task = tasks.find(task => task.id === taskId);
     task.completed = !task.completed;
     renderToDos();
+    saveTodos();
 }
 
+function saveTodos() {
+    // Early Return
+    if (!tasks) {
+        console.log("Array Tasks ist leer");
+        return false;
+    }
+    // Setzt die Datne in den Local Storage und speichert sie in Form eines Strings
+    localStorage.setItem("todos", JSON.stringify(tasks));
+    console.log("Todos erfolgreich im Local Storage gespeichert");
+};
+
+function loadTodos() {
+    // Holt die Daten aus dem Local Storage
+    var json = localStorage.getItem("todos");
+    console.log(json);
+    if (json === 'Null') {
+        tasks = [];
+    } else {
+        // Speichert die geholten Daten in einem Json Format
+        var todos = JSON.parse(json);
+        tasks = todos;
+    }
+    renderToDos();
+    console.log("Local Storage Daten:" + tasks);
+};
+
+// Wird Ausgeführt beim Laden der Seite:
+loadTodos();
 renderToDos();
