@@ -113,7 +113,7 @@ function loadTodos() {
     // Holt die Daten aus dem Local Storage
     var json = localStorage.getItem("todos");
     console.log(json);
-    if (json == 'Null') {
+    if (json == null) {
         tasks = [];
     } else {
         // Speichert die geholten Daten in einem Json Format
