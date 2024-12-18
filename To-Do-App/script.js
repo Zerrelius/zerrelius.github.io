@@ -62,7 +62,8 @@ function renderToDos() {
         checkBox.classList.add('check-box');
         checkBox.setAttribute('aria-label', 'Aufgabe erledigen');
         checkBox.setAttribute('type', 'checkbox');
-        checkBox.checked = task.status;
+        checkBox.checked = task.completed;
+        checkBox.addEventListener('change', () => toggleTaskCompletion(task.id));
 
         const span = document.createElement('span');
         span.classList.add('task-name');
@@ -88,5 +89,11 @@ function renderToDos() {
         list.appendChild(li);
     });
 };
+
+function toggleTaskCompletion(taskId) {
+    const task = tasks.find(task => task.id === taskId);
+    task.completed = !task.completed;
+    renderToDos();
+}
 
 renderToDos();
