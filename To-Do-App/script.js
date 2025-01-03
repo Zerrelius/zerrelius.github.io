@@ -115,7 +115,7 @@ function loadTodos() {
     console.log(json);
     // Speichert die geholten Daten in einem Json Format
     var todos = JSON.parse(json);
-    if (todos === "") {
+    if (todos === null) {
         tasks = [];
     } else {
         tasks = todos;
